@@ -1,0 +1,13 @@
+MOV CX,49
+MOV BX,1
+MOV AX,BX
+
+TOP:   
+
+INC BX    
+INC BX
+INC BX
+INC BX
+ADD AX,BX
+
+LOOP TOP   
