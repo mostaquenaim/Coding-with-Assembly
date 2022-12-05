@@ -44,15 +44,15 @@ MSG4 DB 0DH, 0AH, 'Thank You for using my Calculator $'
 
 TASK PROC 
      
-     ADD BH, BL  
-     SUB BH, 30H   
+     SUB BL, BH  
+     ADD BL, 30H   
      
      LEA DX, MSG3 
      MOV AH, 09H
      INT 21H
      
      MOV AH, 2
-     MOV DL, BH
+     MOV DL, BL
      INT 21H  
      
      LEA DX, MSG4 
