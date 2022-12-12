@@ -44,10 +44,6 @@ MAIN PROC
      MOV DX,0DH
      INT 21H
      
-     MOV DX,CX
-     RVRS:
-     POP AX
-     LOOP  
      
      PRINT:
      POP DX
